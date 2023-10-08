@@ -1,0 +1,135 @@
+* {
+    background-color: #dce6f5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header a {
+    padding: 10px 20px;
+    background-color: #527eb8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header a:hover {
+    background-color: #4971a4;
+}
+
+header a:active {
+    background-color: #3f618e;
+}
+
+.button-calcular {
+    padding: 10px 20px;
+    background-color: #527eb8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-calcular:hover {
+    background-color: #4971a4;
+}
+
+.button-calcular:active {
+    background-color: #3f618e;
+}
+
+#content-container {
+    display: flex;
+    width: 80%; /* Ancho del contenedor principal */
+    margin-top: 20px;
+}
+
+#image-container {
+    width: 170%; /* Ancho del contenedor de imágenes */
+    display: flex;
+    justify-content: space-between;
+}
+
+.mapa-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa {
+    width: 90%; /* Ancho de cada imagen */
+    padding-right: 5%;
+}
+
+.mapa-text {
+    text-align: center;
+    margin: 10px;
+}
+
+.mapa-desc {
+    margin-left: -30%;
+    margin-top: 1%;
+}
+
+#data-container {
+    width: 50%; /* Ancho del contenedor de la tabla */
+    padding-left: 5%;
+    margin-top: 2%;
+}
+
+table {
+    width: 102%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 8px;
+}
+
+/* Estilos para el grupo de opciones de radio */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4%; /* Mover el grupo de opciones hacia abajo */
+}
+
+.radio-label {
+    margin-right: 30px; /* Separación entre las opciones de radio y el texto */
+    margin-left: -30%;
+    margin-bottom: 10%;
+}
+
+/* Estilos para el select de años */
+.select-year {
+    margin: 10px; /* Separación desde el texto */
+}
+
+/* Estilos para el párrafo Lorem Ipsum */
+.lorem-ipsum {
+    width:35%; /* Ancho del párrafo */
+    margin-left: 5%; /* Margen izquierdo para separarlo de la tabla */
+    position: absolute;
+    top: 35%;
+    left: 54%;
+    display: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fic App</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <header>
+        <a href="especies/especies.html">Especies en peligro de extinción</a>
+        <a href="nado/nado.html">Aguas aptas para nadar</a>
+        <a href="consumo/consumo.html">Aguas aptas para consumo</a>  
+        <a href="denuncias/denuncias.html">Denunciar un lugar contaminado</a>
+    </header>        
+
+    <div id="content-container">
+        <!-- Grupo de opciones de radio a la izquierda del primer mapa -->
+        <div class="radio-group">
+            <label class="radio-label">
+                <input type="radio" name="opcion" value="opcion1" checked> Satelital
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="opcion" value="opcion2"> NDCI
+            </label>
+        </div>
+
+        <div class="mapa-container">
+            <!-- Cambiamos el texto "2018" por un select de años -->
+            <select class="select-year">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+            <img src="img/2018s.png" alt="Imagen 1" class="mapa" id="mapa-imagen">
+        </div>
+        <div class="mapa-container">
+            <div class="mapa-text">2023</div>
+            <img src="img/2022s.png" alt="Imagen 2" class="mapa" id="mapa-2023-imagen">
+        </div>
+
+        <div id="data-container">
+            <table>
+                <tr>
+                    <th colspan="3"><button class="button-calcular">CALCULAR</button></th>
+                </tr>  
+                <tr>
+                    <td><b>Parámetro</b></td>
+                    <td><b>2018</b></td>
+                    <td><b>2023</b></td>
+                </tr>
+                <tr>
+                    <td>Conductividad</td>
+                    <td>167 uS</td>
+                    <td>283 uS</td>
+                </tr>
+                <tr>
+                    <td>Oxígeno Disuelto</td>
+                    <td>7,8 mg/L</td>
+                    <td>8,86667 mg/L</td>
+                </tr>
+                <tr>
+                    <td>Turbidez</td>
+                    <td>804 NTU</td>
+                    <td>154,6667 NTU</td>
+                </tr>                              
+            </table>
+        </div>
+        
+        <!-- Párrafo Lorem Ipsum -->
+        <div class="lorem-ipsum" id="lorem-ipsum">
+            <p>
+                El resultado indica que la calidad del agua es <b>REGULAR</b>. <br> <br>
+                El índice de Conductividad y el Nivel de Turbidez indica que el agua NO ES APTA para el consumo.            </p>
+        </div>
+    </div>
+    <div class="mapa-desc">Medición de NDCI tomada por Sentinel</div>
+    <script src="script.js"></script>
+</body>
+</body>
+</html>
